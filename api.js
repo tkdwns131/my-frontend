@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const api = axios.create({
-  baseURL: "https://my-backend-bjo3.onrender.com",
+  baseURL: process.env.NEXT_PUBLIC_API_URL,
 })
 
 export const getExampleData = async () => {
